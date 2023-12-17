@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>function_rest_parameter</title>
+</head>
+
+<body>
+  <script>
+
+    function sum(name, ...data) {
+      let total = 0;
+      for (const item of data) {
+        total += item;
+      }
+      document.writeln(`Total ${name} is ${total}</br>`);
+    }
+
+    const values = [1,2,4,5,6];
+
+    sum('orange', 13, 23, 4, 44, 52, 5);
+    sum('apple', 13, 23, 4, 42, 52, 5);
+    sum('banana', 13, 21, 4, 44, 12, 5);
+    sum('manggo', ...values);  // aman, jika terlanjut membuat arrray
+
+    // sum('manggo',values); error atau tidak sesuai keinginan
+
+  </script>
+</body>
+
+</html>

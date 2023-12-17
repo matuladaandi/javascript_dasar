@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function-return-value</title>
+  </head>
+  <body>
+    <script>
+      // membuat function return value
+      function sayHello(firstName, lastName) {
+        const say = `Hello ${firstName} ${lastName}`;
+        return say;
+      }
+
+      document.writeln(sayHello("andi", "matulada"));
+
+      // function  return value >1
+      function getFinalScor(value) {
+        if (value > 90) {
+          return "A";
+        } else if (value > 80) {
+          return "B";
+        } else if (value > 70) {
+          return "C";
+        } else {
+          return "D";
+        }
+      }
+      document.write(`</br>`);
+      document.writeln(getFinalScor(81));
+
+      // mencari array
+      function isContains(array, searchValue) {
+        for (const element of array) {
+          // console.info(element);   // tes debug
+          if (element === searchValue) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      const array = [131, 234, 35, 3, 4, 2, 553, 6, 1];
+      const search = 1;
+      const found = isContains(array, search);
+      document.writeln(`</br>hasilnya : ${found}`);
+    </script>
+  </body>
+</html>

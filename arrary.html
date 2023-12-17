@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let number = [];
+        let names= ["andi","domi",12,1.9,true];
+
+        number.push("datapertama","datakedua");
+        console.table(names);  //  tampilkan dalam bentuk tabel
+        console.info(names.length);  // panjang array
+        console.info(names[1]);  // tampilkan array berdasarkan index
+        console.info(names[1]="julia");
+        console.info(names[1]);
+
+        console.info(delete names[1]);  // menghapus array index ke 1
+        console.info(names[1]);  // tidak di temukan karna sudahd dihapus
+        console.info(names[0]);  // index 0 ada
+        console.info(names[2]);  // index 2 ada
+        console.table(names);  // index ke 1 hilang krn sudah dihapus
+
+    </script>
+</body>
+</html>

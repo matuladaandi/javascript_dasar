@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      const orang = {};
+      const cars = {};
+
+      // menambahkan properties di object
+      orang["nama"] = "andi";
+      orang["umur"] = 23;
+
+      // hapus
+      delete orang["umur"];
+      console.table(orang);
+
+      // akses properties langsung
+      const ponsel = {
+        merek: "oppo",
+        harga: 12,
+        warna: "hitam",
+      };
+
+      console.info(`Merek Ponsel : ${ponsel.merek}`);
+      console.info(`Warna Ponsel : ${ponsel.warna}`);
+    </script>
+  </body>
+</html>

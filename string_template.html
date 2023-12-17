@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      const name = "andi";
+      const age = 23;
+      const value = 80;
+      const templete = `Hallo i'm ${name} and i'm my age ${age}`;
+      // document.writeln(templete);
+
+      console.info(templete);
+
+      const infoLulus = `Nama : ${name} diNyatakan Lulus : ${value > 75}`;
+      console.info(infoLulus);
+
+      let multiLineString = `ini adalah
+mulitline
+string`;
+      document.write("<pre>");
+      document.write(multiLineString);
+      document.write("</pre>");
+    </script>
+  </body>
+</html>

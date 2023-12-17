@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String & Number</title>
+  </head>
+  <body>
+    <script>
+      const value1 = parseInt("2"); // konversi string -> int
+      const value2 = 2;
+      const sum = value1 + value2;
+      console.info(sum);
+      document.write(`${value1} + ${value2} = ${sum}`);
+      document.write("</br>");
+      document.writeln(`dari int ke float ${parseFloat(value2)}`);
+      document.write("</br>");
+      document.writeln(`dari int ke Number ${Number(value2)}`);  // bisa int dan juga float
+      document.write("</br>");
+
+      const a = 1;
+      const b = 1;
+
+      const total = a.toString() + b.toString();  // menjadi string 
+      document.write(total);  
+    </script>
+  </body>
+</html>
